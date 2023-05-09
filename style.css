@@ -416,3 +416,39 @@ nav .fa-solid{
     margin-top: -40px;
     display: block;
 }
+
+
+
+.containertype {
+
+    display: flex;
+
+}
+.containertype p {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+}
+.containertype p span.typed-text {
+    font-weight: normal;
+    color: #bfa4ff;
+}
+.containertype p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+.containertype p span.cursor.typing {
+    animation: none;
+}
+@keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+}
