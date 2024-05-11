@@ -25,7 +25,7 @@ function closemenu(){
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Full Stack Developer", "Data Analyst", "UI/UX Designer", "3D Artist"];
+const textArray = ["Gen AI Enthusiast","Machine Learning Engineer", "Data Analyst", "3D Artist"];
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTextDelay = 2000; // Delay between current and next text
