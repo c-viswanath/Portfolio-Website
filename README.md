@@ -1,2 +1,2 @@
 # Portfolio-Website
-My Portfolio Website made using HTML,CSS and JS
+My Portfolio Website created using HTML,CSS and JS
