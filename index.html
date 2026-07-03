@@ -16,16 +16,19 @@
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' font-family='serif'%3ECv%3C/text%3E%3C/svg%3E">
 </head>
 <body>
+    <div id="progress" aria-hidden="true"></div>
+
     <header class="site-header">
         <div class="wrap">
-            <a href="#" class="brand">C. Viswanath</a>
+            <a href="#" class="brand">C.&nbsp;Viswanath</a>
             <nav>
                 <a href="#work">Work</a>
                 <a href="#research">Research</a>
                 <a href="#projects">Projects</a>
                 <a href="#education">Education</a>
                 <button id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32 1.41-1.41"/></svg>
                 </button>
             </nav>
         </div>
@@ -34,11 +37,12 @@
     <main class="wrap">
 
         <section id="intro" class="intro">
+            <p class="status"><span class="dot"></span>Currently — LLM Research Engineer&nbsp;@&nbsp;Predii</p>
             <h1>C. Viswanath</h1>
             <p class="lede">
                 LLM Research Engineer at <a href="https://www.predii.com" target="_blank" rel="noopener">Predii</a> and
                 MS&nbsp;by&nbsp;Research student at <a href="https://www.iiitb.ac.in" target="_blank" rel="noopener">IIIT Bangalore</a>.
-                I work on multilingual and agentic language models — currently on vision-LLM extraction, retrieval systems, and the mechanistic evaluation of cultural understanding in LLMs.
+                I work on multilingual and agentic language models — currently on vision-LLM extraction, retrieval systems, and the mechanistic evaluation of <em class="accent-em">cultural understanding</em> in LLMs.
             </p>
             <ul class="meta">
                 <li>Bangalore, IN</li>
@@ -46,13 +50,13 @@
                 <li><a href="https://github.com/c-viswanath" target="_blank" rel="noopener">GitHub</a></li>
                 <li><a href="https://www.linkedin.com/in/c-vishwanath-7b9791175/" target="_blank" rel="noopener">LinkedIn</a></li>
                 <li><a href="https://twitter.com/vishwacodes" target="_blank" rel="noopener">Twitter</a></li>
-                <li><a href="assets/C-Viswanath-CV.pdf" target="_blank" rel="noopener">CV&nbsp;↗</a></li>
+                <li><a href="assets/C-Viswanath-CV.pdf" target="_blank" rel="noopener" class="cv-link">CV&nbsp;↗</a></li>
             </ul>
         </section>
 
         <section id="work" class="section">
             <h2>Experience</h2>
-            <div class="entries">
+            <div class="entries timeline">
 
                 <article class="entry">
                     <div class="entry-head">
@@ -100,7 +104,7 @@
 
         <section id="research" class="section">
             <h2>Research</h2>
-            <div class="entries">
+            <div class="entries timeline">
 
                 <article class="entry">
                     <div class="entry-head">
@@ -147,9 +151,9 @@
 
         <section id="projects" class="section">
             <h2>Selected Projects</h2>
-            <div class="entries">
+            <div class="entries cards">
 
-                <article class="entry">
+                <article class="entry card">
                     <div class="entry-head">
                         <div>
                             <h3>JanMitra — Voice-First Agentic AI</h3>
@@ -164,10 +168,10 @@
                         <li>Twelve-microservice LangGraph orchestrator with 92% eval pass rate, DEPA-style consent gate, PII encryption and full audit trail on GKE.</li>
                         <li>Stateful conversations handling interruptions, context switches and database-backed scheme validation in real time.</li>
                     </ul>
-                    <p class="tags">Python · FastAPI · LangGraph · Claude Sonnet · PostgreSQL · Docker · GKE</p>
+                    <p class="tags"><span>Python</span><span>FastAPI</span><span>LangGraph</span><span>Claude Sonnet</span><span>PostgreSQL</span><span>Docker</span><span>GKE</span></p>
                 </article>
 
-                <article class="entry">
+                <article class="entry card">
                     <div class="entry-head">
                         <div>
                             <h3>Full-Stack Health QA System</h3>
@@ -180,10 +184,10 @@
                         <li>Integrated EHR/EMR devices via REST and FHIR pipelines for real-time data ingestion on GCP.</li>
                         <li>HIPAA-compliant BigQuery and Firebase schemas with field-level encryption for sensitive EHR records.</li>
                     </ul>
-                    <p class="tags">Gemini API · GCP · Cloud Run · Firebase · BigQuery · FHIR</p>
+                    <p class="tags"><span>Gemini API</span><span>GCP</span><span>Cloud Run</span><span>Firebase</span><span>BigQuery</span><span>FHIR</span></p>
                 </article>
 
-                <article class="entry">
+                <article class="entry card">
                     <div class="entry-head">
                         <div>
                             <h3>Palette-Conditioned ControlNet</h3>
@@ -197,7 +201,7 @@
                         <li>Enforces explicit colour palettes in diffusion outputs by encoding dominant CIELAB colours as conditioning maps.</li>
                         <li>Improved colour fidelity without sacrificing visual quality — useful for product photography.</li>
                     </ul>
-                    <p class="tags">PyTorch · Diffusion Models · ControlNet</p>
+                    <p class="tags"><span>PyTorch</span><span>Diffusion Models</span><span>ControlNet</span></p>
                 </article>
 
             </div>
@@ -206,7 +210,7 @@
 
         <section id="education" class="section">
             <h2>Education</h2>
-            <div class="entries">
+            <div class="entries timeline">
 
                 <article class="entry compact">
                     <div class="entry-head">
@@ -233,7 +237,7 @@
         </section>
 
         <section id="skills" class="section">
-            <h2>Skills & Tools</h2>
+            <h2>Skills &amp; Tools</h2>
             <dl class="skills">
                 <dt>AI &amp; ML</dt>
                 <dd>NLP · Generative AI · LLMs · RAG · Multimodal Models · Agentic Systems</dd>
@@ -262,7 +266,8 @@
         </section>
 
         <footer class="footer">
-            <p>Get in touch — <a href="mailto:cvishwanath1417@gmail.com">cvishwanath1417@gmail.com</a></p>
+            <h2 class="footer-title">Get in touch<span class="accent-dot">.</span></h2>
+            <p><a class="footer-mail" href="mailto:cvishwanath1417@gmail.com">cvishwanath1417@gmail.com <span class="arrow">→</span></a></p>
             <p class="fine">© <span id="year"></span> C. Viswanath · Built with plain HTML &amp; CSS</p>
         </footer>
 
