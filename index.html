@@ -2,181 +2,272 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C. Viswanath — LLM Research & Engineering</title>
+    <meta name="description" content="C. Viswanath — LLM Research Engineer at Predii, MS by Research student at IIIT Bangalore. Working on multilingual, agentic and cross-cultural evaluation of large language models.">
+    <meta name="author" content="C. Viswanath">
+    <meta property="og:title" content="C. Viswanath">
+    <meta property="og:description" content="LLM Research Engineer · MS by Research, IIIT Bangalore">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>C.Vishwanath</title>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel = "icon" href = "images/code-solid.png" type = "image/x-icon">
-    <script src="https://kit.fontawesome.com/66879895f8.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' font-family='serif'%3ECv%3C/text%3E%3C/svg%3E">
 </head>
 <body>
-    <div id="header">
-        <div class="container">
+    <header class="site-header">
+        <div class="wrap">
+            <a href="#" class="brand">C. Viswanath</a>
             <nav>
-                <img src="images/logo.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">home</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#experience">experience</a></li>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a href="#contact">contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <a href="#work">Work</a>
+                <a href="#research">Research</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <button id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
             </nav>
-            <div class="header-text">
-                <div class="containertype">
-                    <p><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-                </div>
-                <h1>Hi, I'm <span>C.Vishwanath</span> <br> from India</h1>
-            </div>
         </div>
-    </div>
+    </header>
 
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.png" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Welcome to my portfolio! With a strong foundation in computer science and data science, coupled with hands-on experience in developing innovative applications and projects, 
-                        I am excited to showcase my journey in data science. Proficient in Python and well-versed in machine learning frameworks, I am eager to contribute to impactful projects and
-                        drive insights through data.
-                    </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick=" opentab('education')">Education</p>
+    <main class="wrap">
+
+        <section id="intro" class="intro">
+            <h1>C. Viswanath</h1>
+            <p class="lede">
+                LLM Research Engineer at <a href="https://www.predii.com" target="_blank" rel="noopener">Predii</a> and
+                MS&nbsp;by&nbsp;Research student at <a href="https://www.iiitb.ac.in" target="_blank" rel="noopener">IIIT Bangalore</a>.
+                I work on multilingual and agentic language models — currently on vision-LLM extraction, retrieval systems, and the mechanistic evaluation of cultural understanding in LLMs.
+            </p>
+            <ul class="meta">
+                <li>Bangalore, IN</li>
+                <li><a href="mailto:cvishwanath1417@gmail.com">cvishwanath1417@gmail.com</a></li>
+                <li><a href="https://github.com/c-viswanath" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/c-vishwanath-7b9791175/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://twitter.com/vishwacodes" target="_blank" rel="noopener">Twitter</a></li>
+                <li><a href="assets/C-Viswanath-CV.pdf" target="_blank" rel="noopener">CV&nbsp;↗</a></li>
+            </ul>
+        </section>
+
+        <section id="work" class="section">
+            <h2>Experience</h2>
+            <div class="entries">
+
+                <article class="entry">
+                    <div class="entry-head">
+                        <div>
+                            <h3>LLM Research Engineer, Intern</h3>
+                            <p class="org"><a href="https://www.predii.com" target="_blank" rel="noopener">Predii India Pvt. Ltd.</a> · Remote (Pune)</p>
+                        </div>
+                        <span class="date">Jun 2026 – Present</span>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li>Gen AI<br><span>Using LLMs to create interesting projects like Chatbots, PDF Qery systems</span><br><a href="https://learn.deeplearning.ai/accomplishments/8bae6911-d692-4227-8b32-6a4a317da339?usp=sharing">Credentials</a></li>
-                            <li>Data Science<br><span>Predictive data analysis using Python and Machine Learning</span><br><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/FUN8Z8TVM2SQ">Credentials</a></li>
-                        </ul>
-                    </div>        
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li>2024<br><span>LangChain for LLM Application Development</span>
-                            <li>2023<br><span>IBM Data Science Professional Certificate</span></li>
-                            <li>2021-25<br><span>B.Tech, Computer Science And Engineering, XIM University, Bhubaneswar</span></li>
-                            <li>2021<br><span>Class 12, D.A.V.Public School, Unit-8, Bhubaneswar</span></li>
-                        </ul>
-                    </div>        
-                </div>
+                    <ul>
+                        <li>Building vision-LLM extraction pipelines and retrieval systems over large-scale, domain-specific document datasets.</li>
+                    </ul>
+                </article>
+
+                <article class="entry">
+                    <div class="entry-head">
+                        <div>
+                            <h3>Software Development Intern</h3>
+                            <p class="org">Spikewell India Pvt. Ltd. · Bhubaneswar, IN</p>
+                        </div>
+                        <span class="date">Dec 2024 – Jul 2025</span>
+                    </div>
+                    <ul>
+                        <li>Built healthcare data pipelines using Gemini&nbsp;1.5&nbsp;Pro for medical-grade conversational systems.</li>
+                        <li>Developed data-ingestion workflows for downstream analytics and ML tasks.</li>
+                    </ul>
+                </article>
+
+                <article class="entry">
+                    <div class="entry-head">
+                        <div>
+                            <h3>ML Engineering Intern</h3>
+                            <p class="org">Navier Machines Pvt. Ltd. · Remote (Hyderabad)</p>
+                        </div>
+                        <span class="date">May 2024 – Jul 2024</span>
+                    </div>
+                    <ul>
+                        <li>Designed a RAG pipeline using Llama-3 and GPT-4 for structured conversational workflows.</li>
+                        <li>Built APIs with FastAPI and LangServe to improve frontend response integration.</li>
+                    </ul>
+                </article>
+
             </div>
-        </div>
-    </div>
-    <div id="experience">
-        <div class="container">
-            <h1 class="sub-title">My Experience</h1>
-            <div class="experience-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Summer Intern</h2>
-                    <h3>BATOI Sytems Pvt. Ltd.</h3>
-                    <p>Backend and PHP Developer in Summer 2023</p>
-                    <a href="https://www.linkedin.com/in/c-vishwanath/overlay/1635536399407/single-media-viewer/?profileId=ACoAACmViD0BS-LTKawAGYg6Hj38n3QVI5q-3NA">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Developer Intern</h2>
-                    <h3>CodeClause</h3>
-                    <p>Web Developer Intern from May 2023</p>
-                    <a href="https://www.linkedin.com/in/c-vishwanath-7b9791175/overlay/1635524331458/single-media-viewer/?profileId=ACoAACmViD0BS-LTKawAGYg6Hj38n3QVI5q-3NA" target=”_blank”>Learn More</a>
-                </div>
+        </section>
+
+        <section id="research" class="section">
+            <h2>Research</h2>
+            <div class="entries">
+
+                <article class="entry">
+                    <div class="entry-head">
+                        <div>
+                            <h3>Mechanistic Evaluation of LLMs in Cross-Cultural Scenarios</h3>
+                            <p class="org">Ongoing · IIIT Bangalore</p>
+                        </div>
+                        <span class="date">2026</span>
+                    </div>
+                    <ul>
+                        <li>Characterised <em>cultural forgetting</em> across 6 models, 30 cultures and 11 domains over 85K+ dialogues.</li>
+                        <li>Introduced the <strong>Cultural Stability Index (CSI)</strong> via linear probing; mean CSI = 0.31 with low-resource cultures showing markedly lower stability.</li>
+                    </ul>
+                </article>
+
+                <article class="entry">
+                    <div class="entry-head">
+                        <div>
+                            <h3>Cross-Cultural Alignment Evaluation Framework</h3>
+                            <p class="org">Ongoing · IIIT Bangalore</p>
+                        </div>
+                        <span class="date">2026</span>
+                    </div>
+                    <ul>
+                        <li>Curating a multilingual, cross-cultural dataset to study linguistic and contextual variation for LLM evaluation.</li>
+                    </ul>
+                </article>
+
+                <article class="entry">
+                    <div class="entry-head">
+                        <div>
+                            <h3>Principle Alignment in Large Language Models</h3>
+                            <p class="org">Ongoing · IIIT Bangalore</p>
+                        </div>
+                        <span class="date">2025 – 26</span>
+                    </div>
+                    <ul>
+                        <li>Investigating principle-alignment behaviours and consistency drift in LLMs under varied prompt settings.</li>
+                    </ul>
+                </article>
+
             </div>
-        </div>
-    </div>
-    <div id="projects">
-        <div class="container">
-            <h1 class="sub-title">Projects</h1>
-            <div class="project-list">
-                <div class="work">
-                    <img src="images/work1.png" alt="">
-                    <div class="layer">
-                        <h3>SWARA DETECTION OF CLASSICAL INDIAN MUSIC</h3>
-                        <p> Curated a labeled dataset using Label Studio for model training. Achieved a robust prediction accuracy of 77.88% during testing. Obtained a swara detection rate of 95.6%.</p>
-                        <a href="https://github.com/Bharadwaja04/Swara-Detection-using-TensorFlow" target=”_blank”><i class="fa-solid fa-link"></i></a>
-                        <a href="https://github.com/Bharadwaja04/Swara-Detection-using-TensorFlow" target=”_blank”><i class="fa-brands fa-github"></i></a>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Selected Projects</h2>
+            <div class="entries">
+
+                <article class="entry">
+                    <div class="entry-head">
+                        <div>
+                            <h3>JanMitra — Voice-First Agentic AI</h3>
+                            <p class="org">Multilingual grievance & scheme-access platform for citizens</p>
+                        </div>
+                        <span class="date">
+                            <a href="https://github.com/c-viswanath/JanMitra" target="_blank" rel="noopener">GitHub&nbsp;↗</a>
+                        </span>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="images/work2.png" alt="">
-                    <div class="layer">
-                        <h3>PDF Chatbot</h3>
-                        <p>Using the power of GenAI, this is an app to summarize documents and generate meaningful insights without actually reading the document</p>
-                        <a href="https://github.com/c-viswanath/PDF-Chatbot" target=”_blank”><i class="fa-solid fa-link"></i></a>
-                        <a href="https://github.com/c-viswanath/PDF-Chatbot" target=”_blank”><i class="fa-brands fa-github"></i></a>
+                    <ul>
+                        <li>Voice-first agentic AI enabling citizens to file grievances and access schemes over phone calls in Odia, Santali and Hindi.</li>
+                        <li>Twelve-microservice LangGraph orchestrator with 92% eval pass rate, DEPA-style consent gate, PII encryption and full audit trail on GKE.</li>
+                        <li>Stateful conversations handling interruptions, context switches and database-backed scheme validation in real time.</li>
+                    </ul>
+                    <p class="tags">Python · FastAPI · LangGraph · Claude Sonnet · PostgreSQL · Docker · GKE</p>
+                </article>
+
+                <article class="entry">
+                    <div class="entry-head">
+                        <div>
+                            <h3>Full-Stack Health QA System</h3>
+                            <p class="org">Product for CareXa Inc.</p>
+                        </div>
+                        <span class="date">2025</span>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="images/work3.png" alt="">
-                    <div class="layer">
-                        <h3>Airline Reviews Chatbot</h3>
-                        <p>Utilizes GPT-3.5 Turbo and FAISS forlightning-fast documentretrieval.Offers 30% higher accuracy than BERT, and processes data 2x faster.Integrates ChatOpenAI and uses RAG techniques for contextually
-relevant responses.
-</p>
-                        <a href="https://github.com/c-viswanath/Airline-Reviews-Chatbot" target=”_blank”><i class="fa-solid fa-link"></i></a>
-                        <a href="https://github.com/c-viswanath/Airline-Reviews-Chatbot" target=”_blank”><i class="fa-brands fa-github"></i></i></a>
+                    <ul>
+                        <li>Health-QA system using Gemini API, Cloud Run, Firebase and BigQuery for medical question answering and clinical analytics.</li>
+                        <li>Integrated EHR/EMR devices via REST and FHIR pipelines for real-time data ingestion on GCP.</li>
+                        <li>HIPAA-compliant BigQuery and Firebase schemas with field-level encryption for sensitive EHR records.</li>
+                    </ul>
+                    <p class="tags">Gemini API · GCP · Cloud Run · Firebase · BigQuery · FHIR</p>
+                </article>
+
+                <article class="entry">
+                    <div class="entry-head">
+                        <div>
+                            <h3>Palette-Conditioned ControlNet</h3>
+                            <p class="org">Explicit colour control for text-to-image diffusion</p>
+                        </div>
+                        <span class="date">
+                            <a href="https://github.com/c-viswanath/palette-controlnet" target="_blank" rel="noopener">GitHub&nbsp;↗</a>
+                        </span>
                     </div>
-                </div>
+                    <ul>
+                        <li>Enforces explicit colour palettes in diffusion outputs by encoding dominant CIELAB colours as conditioning maps.</li>
+                        <li>Improved colour fidelity without sacrificing visual quality — useful for product photography.</li>
+                    </ul>
+                    <p class="tags">PyTorch · Diffusion Models · ControlNet</p>
+                </article>
+
             </div>
-            <a href="https://github.com/c-viswanath" class="btn" target=”_blank”>See More</a>
-        </div>
-    </div>
+            <p class="see-more"><a href="https://github.com/c-viswanath?tab=repositories" target="_blank" rel="noopener">More on GitHub&nbsp;↗</a></p>
+        </section>
 
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>cvishwanath1417@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>+91 7008107661</p>
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/_.vishwanath._/" target=”_blank”><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/c-vishwanath-7b9791175/" target=”_blank”><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/c-viswanath" target=”_blank”><i class="fa-brands fa-github"></i></a>
-                        <a href="https://twitter.com/cvarteth" target=”_blank”><i class="fa-brands fa-twitter"></i></a>
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <div class="entries">
 
+                <article class="entry compact">
+                    <div class="entry-head">
+                        <div>
+                            <h3>IIIT Bangalore</h3>
+                            <p class="org">MS by Research · GPA 3.28 / 4</p>
+                        </div>
+                        <span class="date">Aug 2025 – Present</span>
                     </div>
-                    <a href="images/CV-TECH-NEW.pdf" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+                    <p class="coursework">Advanced NLP · Generative AI & LLMs · Agentic AI and Tool-Augmented LLMs · Mathematics for Machine Learning</p>
+                </article>
+
+                <article class="entry compact">
+                    <div class="entry-head">
+                        <div>
+                            <h3>XIM University, Bhubaneswar</h3>
+                            <p class="org">B.Tech, Computer Science · GPA 8.34 / 10</p>
+                        </div>
+                        <span class="date">Jul 2021 – Jul 2025</span>
+                    </div>
+                </article>
+
             </div>
-        </div>
+        </section>
 
-    </div>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbySNbCm4ZOHompFhVv_qASkEUn7Uv8o2bnvP-CmN0fkjVMWG82UlZ50hAhr0z09BXvyJA/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg= document.getElementById('msg');
-        
+        <section id="skills" class="section">
+            <h2>Skills & Tools</h2>
+            <dl class="skills">
+                <dt>AI &amp; ML</dt>
+                <dd>NLP · Generative AI · LLMs · RAG · Multimodal Models · Agentic Systems</dd>
+                <dt>Frameworks</dt>
+                <dd>PyTorch · TensorFlow · Hugging Face · LangChain · LangGraph · OpenCV</dd>
+                <dt>Data &amp; Analytics</dt>
+                <dd>Pandas · NumPy · SQL · BigQuery · Power BI</dd>
+                <dt>Cloud &amp; MLOps</dt>
+                <dd>GCP (Cloud Run, Firebase, IAM) · Docker · Git · GKE</dd>
+                <dt>Languages</dt>
+                <dd>Python</dd>
+            </dl>
 
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML="Message Sent Successfully!"
-                setTimeout(function(){
-                    msg.innerHTML=""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
-    <script src="app.js"></script> 
+            <h3 class="minor">Certifications</h3>
+            <ul class="plain">
+                <li>IBM Data Science Professional Certificate</li>
+                <li>Power BI Certification — Microsoft</li>
+                <li>LangChain for LLM Application Development — DeepLearning.AI</li>
+            </ul>
+
+            <h3 class="minor">Leadership</h3>
+            <ul class="plain">
+                <li><strong>Placement Coordinator</strong>, XIM University — coordinated end-to-end campus placement drives across recruiters and students.</li>
+                <li><strong>Founding Member</strong>, RobogeniX (IoT & Robotics Club) — co-founded the university's robotics community and ran workshops and hackathons.</li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <p>Get in touch — <a href="mailto:cvishwanath1417@gmail.com">cvishwanath1417@gmail.com</a></p>
+            <p class="fine">© <span id="year"></span> C. Viswanath · Built with plain HTML &amp; CSS</p>
+        </footer>
+
+    </main>
+
+    <script src="app.js"></script>
 </body>
 </html>
