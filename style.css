@@ -231,6 +231,14 @@ a {
     100% { box-shadow: 0 0 0 0 transparent; }
 }
 
+.intro-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+}
+.intro-text { flex: 1; min-width: 0; }
+
 .intro h1 {
     font-family: var(--serif);
     font-weight: 400;
@@ -238,6 +246,80 @@ a {
     line-height: 1.05;
     letter-spacing: -.01em;
     margin-bottom: 20px;
+}
+
+/* ---------- Avatar ---------- */
+.avatar-wrap {
+    flex-shrink: 0;
+    width: 200px;
+}
+.avatar { width: 100%; height: auto; display: block; }
+
+.avatar .skin { fill: #E0A971; }
+.avatar .hair { fill: #241C14; }
+.avatar .sweater { fill: var(--accent); }
+.avatar .sleeve {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 14;
+    stroke-linecap: round;
+}
+.avatar .glass {
+    fill: rgba(255, 255, 255, .16);
+    stroke: var(--text);
+    stroke-width: 2.5;
+}
+.avatar .eye { fill: #1A1A1A; transform-box: fill-box; transform-origin: center; }
+[data-theme="dark"] .avatar .eye { fill: #14140F; }
+.avatar .smile {
+    fill: none;
+    stroke: #8C5A33;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+}
+.avatar .blush { fill: rgba(214, 108, 91, .35); }
+.avatar .cap-top { fill: #23231E; stroke: var(--rule); stroke-width: 1; }
+.avatar .cap-base { fill: #2E2E27; }
+.avatar .tassel-string { stroke: #D9A93F; stroke-width: 2; fill: none; }
+.avatar .tassel { fill: #D9A93F; }
+.avatar .ground { fill: rgba(0, 0, 0, .08); }
+[data-theme="dark"] .avatar .ground { fill: rgba(0, 0, 0, .35); }
+.avatar .bubble-bg { fill: var(--surface); stroke: var(--rule); stroke-width: 1.5; }
+.avatar .bubble-text {
+    font-family: var(--mono);
+    font-size: 19px;
+    fill: var(--accent);
+    text-anchor: middle;
+}
+
+.avatar .arm-wave {
+    transform-origin: 150px 160px;
+    animation: wave 1.9s ease-in-out infinite;
+}
+@keyframes wave {
+    0%, 100% { transform: rotate(10deg); }
+    50% { transform: rotate(-16deg); }
+}
+.avatar .head {
+    transform-origin: 120px 148px;
+    animation: head-tilt 5.6s ease-in-out infinite;
+}
+@keyframes head-tilt {
+    0%, 100% { transform: rotate(-1.6deg); }
+    50% { transform: rotate(2.2deg); }
+}
+.avatar .eye { animation: blink 4.4s infinite; }
+@keyframes blink {
+    0%, 91%, 96%, 100% { transform: scaleY(1); }
+    93.5% { transform: scaleY(.08); }
+}
+.avatar .bubble {
+    transform-origin: 190px 44px;
+    animation: bubble-bob 1.9s ease-in-out infinite;
+}
+@keyframes bubble-bob {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-4px) scale(1.05); }
 }
 .lede {
     font-size: 18px;
@@ -423,6 +505,9 @@ main.wrap { counter-reset: sec; }
     margin-top: 14px;
 }
 .tags span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     font-family: var(--mono);
     font-size: 11px;
     letter-spacing: .01em;
@@ -433,9 +518,43 @@ main.wrap { counter-reset: sec; }
     padding: 3px 10px;
     transition: color .2s ease, border-color .2s ease;
 }
+.tags .ti {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+    background-color: currentColor;
+    -webkit-mask: var(--i) center / contain no-repeat;
+    mask: var(--i) center / contain no-repeat;
+}
 .cards .entry.card:hover .tags span {
     color: var(--text);
     border-color: color-mix(in oklab, var(--accent) 30%, var(--rule));
+}
+
+/* Hover CTA (live demo) */
+.card-cta {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+    font-family: var(--mono);
+    font-size: 12px;
+    padding: 7px 14px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--bg);
+    opacity: 0;
+    transform: translateY(8px);
+    pointer-events: none;
+    transition: opacity .25s ease, transform .25s cubic-bezier(.2, .8, .3, 1);
+    box-shadow: 0 10px 24px -12px var(--glow);
+}
+.cards .entry.card:hover .card-cta,
+.card-cta:focus-visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 .coursework {
@@ -528,6 +647,8 @@ ul.plain li strong { font-weight: 600; }
     .wrap { padding: 0 20px; }
     .intro { padding: 48px 0 24px; }
     .intro::before { font-size: 180px; right: -30px; }
+    .intro-grid { flex-direction: column; align-items: flex-start; gap: 8px; }
+    .avatar-wrap { width: 150px; order: -1; align-self: flex-end; margin-top: -34px; }
     .intro h1 { font-size: 40px; }
     .lede { font-size: 16px; }
     .section { padding: 40px 0; }
