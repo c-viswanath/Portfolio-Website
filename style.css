@@ -645,11 +645,23 @@ ul.plain li strong { font-weight: 600; }
 /* ---------- Responsive ---------- */
 @media (max-width: 640px) {
     .wrap { padding: 0 20px; }
-    .intro { padding: 48px 0 24px; }
-    .intro::before { font-size: 180px; right: -30px; }
-    .intro-grid { flex-direction: column; align-items: flex-start; gap: 8px; }
-    .avatar-wrap { width: 150px; order: -1; align-self: flex-end; margin-top: -34px; }
-    .intro h1 { font-size: 40px; }
+    .intro { padding: 40px 0 24px; }
+    .intro::before { display: none; }
+    .status {
+        display: flex;
+        justify-content: center;
+        width: fit-content;
+        max-width: 100%;
+        margin: 0 auto 20px;
+        text-align: center;
+        font-size: 11px;
+    }
+    .intro-grid { flex-direction: column; align-items: center; gap: 22px; }
+    .avatar-wrap { width: 172px; order: -1; }
+    .intro-text { width: 100%; }
+    .intro h1 { font-size: 40px; text-align: center; }
+    .lede { text-align: left; }
+    .meta { justify-content: center; }
     .lede { font-size: 16px; }
     .section { padding: 40px 0; }
     .entry-head { flex-direction: column; gap: 4px; align-items: flex-start; }
